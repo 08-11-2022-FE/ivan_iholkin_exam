@@ -10,12 +10,12 @@
     </head>
    <body>
     <header>
-       <section>
+       <section class="header-wrapper">
         <div class="logo">
-            <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="violet" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="0.5" width="18.3099" height="20" rx="9.15493" fill="#9C69E2"/>
             </svg>
-            <svg width="19" height="36" viewBox="0 0 19 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="pink" width="19" height="36" viewBox="0 0 19 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.549316" y="0.5" width="18.3099" height="35" rx="9.15493" fill="#F063B8"/>
             </svg>
         </div>
@@ -29,7 +29,11 @@
         </nav>
        </section>
        <div class="demo">
-        <a href="">Request Demo</a>
+        <a  href="">Request Demo</a>
+        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 15L21 8L15 1"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 8H1"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
        </div>
     </header>
     <main>
@@ -48,58 +52,48 @@
             <div class="info-image"></div>
             <section class="info-text">
                 <h2>We are a high-level data storage bank</h2>
-                <p>The place to store various data that you can access at any time through the internet  and where you can carry it.</p>
-                <p> This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse.</p>
+                <div class="info-text-p">
+                    <p>The place to store various data that you can access at any time through the internet  and where you can carry it.</p>
+                   <p> This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse.</p>
+                </div>
             </section>
         </section>
         <section class="features">
             <h2>Features</h2>
             <p>Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</p>
-        </section>
-        <section class="learn">
-            <section class="learn-item">
-                <svg class="icon">
-                    <use xlink:href="./src/image/learn-image/_sprite.svg#first-image">
-                    </use>
-                </svg>
-                <div class="item-text">
-                    <h3>Search Data</h3>
-                    <p>Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.</p>
-                    <a href="">Learn more</a>
-                </div>
-            </section>
-            <section class="learn-item">
-                <svg class="icon">
-                    <use xlink:href="./src/image/learn-image/_sprite.svg#first-image">
-                    </use>
-                </svg>
-                <div class="item-text">
-                    <h3>24 Hours Access</h3>
-                    <p>Access is given 24 hours a full morning to night and meet again in the morning, giving you comfort when you need data when urgent.</p>
-                    <a href="">Learn more</a>
-                </div>
-            </section>
-            <section class="learn-item">
-                <svg class="icon">
-                    <use xlink:href="./src/image/learn-image/_sprite.svg#first-image">
-                    </use>
-                </svg>
-                <div class="item-text">
-                    <h3>Print Out</h3>
-                    <p>Print out service gives you convenience if someday you need print data, just edit it all and just print it.</p>
-                    <a href="">Learn more</a>
-                </div>
-            </section>
-            <section class="learn-item">
-                <svg class="icon">
-                    <use xlink:href="./src/image/learn-image/_sprite.svg#first-image">
-                    </use>
-                </svg>
-                <div class="item-text">
-                    <h3>Security Code</h3>
-                    <p>Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so only you can open the file.</p>
-                    <a href="">Learn more</a>
-                </div>
+            <section class="learn">
+                <section class="learn-item">
+                    <div class="learn-image search-image"></div>
+                    <div class="item-text search">
+                        <h3>Search Data</h3>
+                        <p>Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.</p>
+                        <a href="">Learn more</a>
+                    </div>
+                </section>
+                <section class="learn-item">
+                    <div class="learn-image hours-image"></div>
+                    <div class="item-text  hours">
+                        <h3>24 Hours Access</h3>
+                        <p>Access is given 24 hours a full morning to night and meet again in the morning, giving you comfort when you need data when urgent.</p>
+                        <a href="">Learn more</a>
+                    </div>
+                </section>
+                <section class="learn-item security">
+                    <div class="learn-image print-image"></div>
+                    <div class="item-text print">
+                        <h3>Print Out</h3>
+                        <p>Print out service gives you convenience if someday you need print data, just edit it all and just print it.</p>
+                        <a href="">Learn more</a>
+                    </div>
+                </section>
+                <section class="learn-item">
+                    <div class="learn-image security-image"></div>
+                    <div class="item-text security">
+                        <h3>Security Code</h3>
+                        <p>Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so only you can open the file.</p>
+                        <a href="">Learn more</a>
+                    </div>
+                </section>
             </section>
         </section>
         <section class="test">
