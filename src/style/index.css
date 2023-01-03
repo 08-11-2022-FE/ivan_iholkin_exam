@@ -1,5 +1,5 @@
 body {
-  padding-inline: 215px;
+  padding-inline: 14.375%;
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -80,6 +80,7 @@ body header .demo:hover svg path {
 }
 .hero .hero-image {
   background-image: url(../image/hero-img.svg);
+  background-repeat: no-repeat;
   width: 770px;
   height: 407px;
   margin-left: -250px;
@@ -146,7 +147,7 @@ body header .demo:hover svg path {
   height: 410px;
 }
 .info .info-text {
-  width: 500px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -193,12 +194,13 @@ body header .demo:hover svg path {
   color: #4B5D68;
 }
 .features .learn {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
+  justify-items: center;
 }
 .features .learn .learn-item {
-  max-width: 50%;
+  max-width: 100%;
+  min-width: 570px;
   display: flex;
   margin-block-end: 50px;
   align-items: center;
@@ -223,7 +225,7 @@ body header .demo:hover svg path {
 }
 .features .learn .learn-item .item-text {
   border-radius: 50px;
-  width: 400px;
+  min-width: 400px;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -294,8 +296,7 @@ body header .demo:hover svg path {
 }
 
 .test {
-  min-width: 1170px;
-  height: 580px;
+  min-height: 580px;
   background-color: #CCDDFF;
   border-radius: 50px;
   background-image: url(../image/test-bg-image.svg);
@@ -490,6 +491,7 @@ footer .contact {
 footer .contact .footer-logo {
   display: flex;
   margin-bottom: 62px;
+  gap: 20px;
 }
 footer .contact .footer-logo h5 {
   font-family: "Montserrat";
@@ -593,6 +595,31 @@ footer ul li a:hover {
 }
 .icons .icon:hover .instagram use {
   fill: #C13584;
+}
+
+@media screen and (max-width: 1439px) {
+  .info {
+    flex-direction: column-reverse;
+    min-width: 100%;
+    height: auto;
+  }
+  .hero {
+    flex-direction: column;
+    height: auto;
+    min-width: 100%;
+  }
+  .hero .hero-image {
+    align-self: center;
+    width: 570px;
+    height: 307px;
+    margin-left: 0;
+    align-self: flex-end;
+    background-size: contain;
+  }
+  .test-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
