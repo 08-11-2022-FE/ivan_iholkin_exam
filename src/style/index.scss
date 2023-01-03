@@ -510,6 +510,7 @@ footer{
    nav{
     display: flex;
     justify-content: space-between;
+    }
     .contact{
         display: flex;
         flex-direction: column;
@@ -590,18 +591,47 @@ footer{
             }
         }
     }
-    .social{
-        .icoms{
-            display: flex;
-            gap: 15px;
-            a{
-                background: #212353;
-                // opacity: 0.1;
-                width: 50px;
-                height: 50px;
-                display: inline-block;
+    
+   }
+
+   .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    .icon{
+        width: 50px;
+        height: 50px;
+        .icon-social{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(33 35 83 / 10%);
+            border-radius:50%;
+            use{
+                fill: white; 
+            }
+        }
+    }
+    .icon:hover{
+        .icon-social{
+            background-color:white;
+        }
+        .facebook{
+            border: 0.5px solid #3B5998;
+            use{
+                fill: #3B5998;
+            }
+        }
+        .twitter{
+            border: 0.5px solid #00ACEE;
+            use{
+                fill: #00ACEE ;
+            }
+        }
+        .instagram{
+            border: 0.5px solid #C13584;
+            use{
+                fill:  #C13584;
             }
         }
     }
    }
-}
