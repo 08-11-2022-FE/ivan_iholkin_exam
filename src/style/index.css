@@ -217,6 +217,8 @@ body header .demo:hover svg path {
   height: 180px;
   margin-inline-end: -60px;
   z-index: 2;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .features .learn .learn-item .search-image {
   background-image: url(../image/learn-image/first-image.svg);
@@ -662,6 +664,35 @@ footer ul li a:hover {
   }
   footer nav {
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1070px) {
+  body {
+    padding-inline: 5.375%;
+  }
+}
+@media screen and (max-width: 780px) {
+  body {
+    padding-inline: 1.375%;
+  }
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100px;
+  }
+  .features .learn .learn-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .features .learn .learn-item .learn-image {
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+  }
+  .features .learn .learn-item .item-text {
+    min-width: none;
   }
 }
 
