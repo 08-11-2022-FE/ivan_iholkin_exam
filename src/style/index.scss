@@ -97,6 +97,9 @@ body{
     height: 50px;
     display: inline-block;
     display: none;
+    svg{
+        fill: #8A40EE;
+    }
 }
 
 
@@ -393,7 +396,7 @@ body{
         gap: 100px;
         justify-content:center;
         .card{
-            width: 485px;
+            max-width: 485px;
             height: 300px;
             box-sizing: border-box;
             background: #FFFFFF;
@@ -421,8 +424,8 @@ body{
                 background-size:cover;
             }
             .card-info{
-                width: 300px;
-                height: 200px;
+                max-width: 300px;
+                height: auto;
                 display: flex;
                 flex-direction: column;
                 gap: 18px;
@@ -557,16 +560,16 @@ footer{
    display: flex; 
    flex-direction: column;
    gap: 109px;
+   padding-block-end:120px ;
    p{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
     line-height: 180%;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.01em;
     color: #212353;
+
    }
    nav{
     display: flex;
@@ -723,7 +726,11 @@ footer{
     }
    }
 
-
+   @media screen and (min-width: 1600px){
+    .hero{
+        justify-content: space-evenly;
+    }
+   }
    @media screen and (max-width: 1439px) {
     .info{
         flex-direction: column-reverse;
@@ -776,16 +783,6 @@ footer{
     .menu-btn:checked + label > svg{
         fill: #C13584;
         transform: rotate(90deg);
-        :first-child{
-            margin: 0  auto;
-            // transform: rotate(45deg);
-        }
-        :nth-child(2){
-            // display: none;
-        }
-        :last-child{
-            // transform: rotate(-190deg);
-        }
     }
     .menu-icon{
         display: inline-block;
@@ -806,6 +803,14 @@ footer{
     justify-content: space-between;
     align-items:flex-start;
     height: 100px;
+}
+.hero{
+    gap: 30px;
+    .hero-image{
+        align-self:center;
+        width: 370px;
+        height: 307px;
+    }
 }
    .features{
     .learn{

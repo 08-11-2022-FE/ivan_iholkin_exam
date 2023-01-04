@@ -88,6 +88,9 @@ body header .demo:hover svg path, body header :focus svg path {
   display: inline-block;
   display: none;
 }
+.menu-icon svg {
+  fill: #8A40EE;
+}
 
 .hero {
   display: flex;
@@ -372,7 +375,7 @@ body header .demo:hover svg path, body header :focus svg path {
   justify-content: center;
 }
 .test .test-cards .card {
-  width: 485px;
+  max-width: 485px;
   height: 300px;
   box-sizing: border-box;
   background: #FFFFFF;
@@ -400,8 +403,8 @@ body header .demo:hover svg path, body header :focus svg path {
   background-size: cover;
 }
 .test .test-cards .card .card-info {
-  width: 300px;
-  height: 200px;
+  max-width: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -520,6 +523,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 109px;
+  padding-block-end: 120px;
 }
 footer p {
   font-family: "Montserrat";
@@ -527,8 +531,6 @@ footer p {
   font-weight: 300;
   font-size: 12px;
   line-height: 180%;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.01em;
   color: #212353;
 }
@@ -674,6 +676,11 @@ footer ul li a:focus {
   fill: #C13584;
 }
 
+@media screen and (min-width: 1600px) {
+  .hero {
+    justify-content: space-evenly;
+  }
+}
 @media screen and (max-width: 1439px) {
   .info {
     flex-direction: column-reverse;
@@ -722,9 +729,6 @@ footer ul li a:focus {
     fill: #C13584;
     transform: rotate(90deg);
   }
-  .menu-btn:checked + label > svg :first-child {
-    margin: 0 auto;
-  }
   .menu-icon {
     display: inline-block;
   }
@@ -741,6 +745,14 @@ footer ul li a:focus {
     justify-content: space-between;
     align-items: flex-start;
     height: 100px;
+  }
+  .hero {
+    gap: 30px;
+  }
+  .hero .hero-image {
+    align-self: center;
+    width: 370px;
+    height: 307px;
   }
   .features .learn .learn-item {
     width: 100%;
