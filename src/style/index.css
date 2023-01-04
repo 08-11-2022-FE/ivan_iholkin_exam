@@ -68,14 +68,25 @@ body header .demo a {
   padding: 16px 23px 16px 23px;
   display: inline-block;
 }
-body header .demo:hover {
+body header .demo:hover, body header :focus {
   background-color: #9C69E2;
 }
-body header .demo:hover a {
+body header .demo:hover a, body header :focus a {
   color: #FFFFFF;
 }
-body header .demo:hover svg path {
+body header .demo:hover svg path, body header :focus svg path {
   stroke: #FFFFFF;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  display: none;
 }
 
 .hero {
@@ -136,6 +147,9 @@ body header .demo:hover svg path {
   padding-left: 52px;
 }
 .hero .hero-text a:hover {
+  background: #8A40EE;
+}
+.hero .hero-text a:focus {
   background: #8A40EE;
 }
 
@@ -465,6 +479,9 @@ body header .demo:hover svg path {
 .try .try-end .more:hover {
   background: #EB4BAB;
 }
+.try .try-end .more:focus {
+  background: #EB4BAB;
+}
 .try .try-end .demo {
   box-sizing: border-box;
   width: 210px;
@@ -592,6 +609,9 @@ footer ul li a {
 footer ul li a:hover {
   color: #8A40EE;
 }
+footer ul li a:focus {
+  color: #8A40EE;
+}
 
 .icons {
   display: flex;
@@ -632,6 +652,27 @@ footer ul li a:hover {
 .icons .icon:hover .instagram use {
   fill: #C13584;
 }
+.icons .icon:focus .icon-social {
+  background-color: white;
+}
+.icons .icon:focus .facebook {
+  border: 0.5px solid #3B5998;
+}
+.icons .icon:focus .facebook use {
+  fill: #3B5998;
+}
+.icons .icon:focus .twitter {
+  border: 0.5px solid #00ACEE;
+}
+.icons .icon:focus .twitter use {
+  fill: #00ACEE;
+}
+.icons .icon:focus .instagram {
+  border: 0.5px solid #C13584;
+}
+.icons .icon:focus .instagram use {
+  fill: #C13584;
+}
 
 @media screen and (max-width: 1439px) {
   .info {
@@ -669,6 +710,26 @@ footer ul li a:hover {
 @media screen and (max-width: 1070px) {
   body {
     padding-inline: 5.375%;
+  }
+  body header {
+    height: auto;
+    align-items: stretch;
+  }
+  .menu-btn:not(:checked) + label ~ .menu {
+    display: none;
+  }
+  .menu-btn:checked + label > svg {
+    fill: #C13584;
+    transform: rotate(90deg);
+  }
+  .menu-btn:checked + label > svg :first-child {
+    margin: 0 auto;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .menu {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 780px) {

@@ -74,7 +74,7 @@ body{
                 }
             }
 
-        .demo:hover{
+        .demo:hover,:focus{
             background-color:#9C69E2;
             a{
                 color: #FFFFFF;  
@@ -87,6 +87,16 @@ body{
         }
         
     }
+}
+
+.menu-btn{
+    display: none;
+}
+.menu-icon{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    display: none;
 }
 
 
@@ -147,6 +157,9 @@ body{
             padding-left: 52px;
         }
         a:hover{
+            background: #8A40EE; 
+        }
+        a:focus{
             background: #8A40EE; 
         }
     }
@@ -495,6 +508,9 @@ body{
         .more:hover{
             background: #EB4BAB;
         }
+        .more:focus{
+            background: #EB4BAB;
+        }
         .demo{
             box-sizing: border-box;           
             width: 210px;
@@ -634,6 +650,9 @@ footer{
             a:hover{
                 color: #8A40EE;  
             }
+            a:focus{
+                color: #8A40EE;  
+            }
         }
     }
     
@@ -657,6 +676,29 @@ footer{
         }
     }
     .icon:hover{
+        .icon-social{
+            background-color:white;
+        }
+        .facebook{
+            border: 0.5px solid #3B5998;
+            use{
+                fill: #3B5998;
+            }
+        }
+        .twitter{
+            border: 0.5px solid #00ACEE;
+            use{
+                fill: #00ACEE ;
+            }
+        }
+        .instagram{
+            border: 0.5px solid #C13584;
+            use{
+                fill:  #C13584;
+            }
+        }
+    }
+    .icon:focus{
         .icon-social{
             background-color:white;
         }
@@ -722,7 +764,35 @@ footer{
    @media screen and (max-width: 1070px){
     body{
         padding-inline: 5.375%;
+        header{
+            height: auto;
+            align-items:stretch
+           }
    } 
+   
+   .menu-btn:not(:checked )+ label ~ .menu{
+    display: none;
+    }
+    .menu-btn:checked + label > svg{
+        fill: #C13584;
+        transform: rotate(90deg);
+        :first-child{
+            margin: 0  auto;
+            // transform: rotate(45deg);
+        }
+        :nth-child(2){
+            // display: none;
+        }
+        :last-child{
+            // transform: rotate(-190deg);
+        }
+    }
+    .menu-icon{
+        display: inline-block;
+    }
+    .menu{
+        flex-direction: column;
+    }
 }
 
 
