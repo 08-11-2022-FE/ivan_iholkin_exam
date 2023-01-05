@@ -820,6 +820,10 @@ footer{
     }
 }
 .try{
+    .try-start{
+        align-self:center;
+        text-align: center;
+    }
     .try-end{
         flex-direction: column;
         align-self:center;

@@ -758,6 +758,10 @@ footer ul li a:focus {
     width: 370px;
     height: 307px;
   }
+  .try .try-start {
+    align-self: center;
+    text-align: center;
+  }
   .try .try-end {
     flex-direction: column;
     align-self: center;
