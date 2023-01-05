@@ -87,6 +87,7 @@ body header .demo:hover svg path, body header :focus svg path {
   height: 50px;
   display: inline-block;
   display: none;
+  padding-block-start: 10px;
 }
 .menu-icon svg {
   fill: #8A40EE;
@@ -387,6 +388,7 @@ body header .demo:hover svg path, body header :focus svg path {
   border-radius: 50px;
   display: flex;
   padding-block-start: 50px;
+  padding-inline-start: 20px;
   justify-content: space-evenly;
   gap: 15px;
 }
@@ -727,6 +729,9 @@ footer ul li a:focus {
     height: auto;
     align-items: stretch;
   }
+  body header .header-wrapper {
+    align-items: flex-start;
+  }
   .menu-btn:not(:checked) + label ~ .menu {
     display: none;
   }
@@ -759,6 +764,9 @@ footer ul li a:focus {
     align-self: center;
     width: 370px;
     height: 307px;
+  }
+  .hero .hero-text h1 {
+    font-size: 48px;
   }
   .try .try-start {
     align-self: center;

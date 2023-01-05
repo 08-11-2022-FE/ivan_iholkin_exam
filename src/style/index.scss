@@ -97,6 +97,7 @@ body{
     height: 50px;
     display: inline-block;
     display: none;
+    padding-block-start: 10px;
     svg{
         fill: #8A40EE;
     }
@@ -410,6 +411,7 @@ body{
             display: flex;
             // align-items:center;
             padding-block-start: 50px;
+            padding-inline-start: 20px;
             justify-content: space-evenly;
             gap: 15px;
             .card-ava{
@@ -779,7 +781,10 @@ footer{
         padding-inline: 5.375%;
         header{
             height: auto;
-            align-items:stretch
+            align-items:stretch;
+            .header-wrapper{
+                align-items:flex-start;
+            }
            }
    } 
    
@@ -819,6 +824,11 @@ footer{
         align-self:center;
         width: 370px;
         height: 307px;
+    }
+    .hero-text{
+        h1{
+            font-size: 48px;
+        }
     }
 }
 .try{
