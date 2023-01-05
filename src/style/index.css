@@ -224,9 +224,10 @@ body header .demo:hover svg path, body header :focus svg path {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
   justify-items: center;
+  width: 100%;
 }
 .features .learn .learn-item {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   margin-block-end: 50px;
   align-items: center;
@@ -253,7 +254,7 @@ body header .demo:hover svg path, body header :focus svg path {
 }
 .features .learn .learn-item .item-text {
   border-radius: 50px;
-  min-width: 400px;
+  width: 100%;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -688,6 +689,7 @@ footer ul li a:focus {
     flex-direction: column-reverse;
     min-width: 100%;
     height: auto;
+    padding: 20px;
   }
   .hero {
     flex-direction: column;
@@ -788,6 +790,9 @@ footer ul li a:focus {
     height: 90px;
     border-radius: 50%;
   }
+  .features .learn {
+    grid-template-columns: 1fr;
+  }
   .features .learn .learn-item {
     width: 100%;
     display: flex;
@@ -797,10 +802,17 @@ footer ul li a:focus {
     width: 100%;
     height: 180px;
     margin: 0 auto;
+    min-width: 100%;
   }
   .features .learn .learn-item .item-text {
-    min-width: 100%;
+    max-width: 100%;
     margin: auto;
+    padding-inline-start: 0px;
+    align-items: stretch;
+    text-align: center;
+  }
+  .features .learn .learn-item .item-text p {
+    width: auto;
   }
 }
 
