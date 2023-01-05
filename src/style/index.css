@@ -167,7 +167,10 @@ body header .demo:hover svg path, body header :focus svg path {
 }
 .info .info-image {
   background-image: url(../image/info-image.svg);
-  width: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
   height: 410px;
 }
 .info .info-text {
@@ -224,13 +227,12 @@ body header .demo:hover svg path, body header :focus svg path {
 }
 .features .learn .learn-item {
   max-width: 100%;
-  min-width: 570px;
   display: flex;
   margin-block-end: 50px;
   align-items: center;
 }
 .features .learn .learn-item .learn-image {
-  width: 230px;
+  min-width: 230px;
   height: 180px;
   margin-inline-end: -60px;
   z-index: 2;
@@ -703,6 +705,7 @@ footer ul li a:focus {
   .test-cards {
     flex-direction: column;
     align-items: center;
+    padding: 30px;
   }
   .try {
     flex-direction: column;
@@ -740,11 +743,12 @@ footer ul li a:focus {
   body {
     padding-inline: 1.375%;
   }
-  header {
+  body header {
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    height: 100px;
+  }
+  body header .header-wrapper {
+    align-items: baseline;
   }
   .hero {
     gap: 30px;
@@ -753,6 +757,32 @@ footer ul li a:focus {
     align-self: center;
     width: 370px;
     height: 307px;
+  }
+  .try .try-end {
+    flex-direction: column;
+    align-self: center;
+  }
+  .test {
+    padding: 10px;
+  }
+  .test .test-cards {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+  }
+  .test .test-cards .card {
+    max-width: 485px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+  .test .test-cards .card .card-ava {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
   }
   .features .learn .learn-item {
     width: 100%;
@@ -765,7 +795,8 @@ footer ul li a:focus {
     margin: 0 auto;
   }
   .features .learn .learn-item .item-text {
-    min-width: none;
+    min-width: 100%;
+    margin: auto;
   }
 }
 

@@ -178,7 +178,10 @@ body{
     min-width: 1170px;
     .info-image{
         background-image:url(../image/info-image.svg);
-        width: 400px;
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+        width: 100%;
         height: 410px;
     }
     .info-text{
@@ -240,12 +243,12 @@ body{
         justify-items: center;
         .learn-item{
             max-width: 100%;
-            min-width: 570px;
+            // max-width: 570px;
             display: flex;
             margin-block-end: 50px;
             align-items:center;
             .learn-image{
-                width: 230px;
+                min-width: 230px;
                 height: 180px;
                 margin-inline-end: -60px;
                 z-index: 2;
@@ -753,6 +756,7 @@ footer{
     .test-cards{
         flex-direction: column;
         align-items:center;
+        padding: 30px;
     }
     .try{
         flex-direction:column;
@@ -789,6 +793,7 @@ footer{
     }
     .menu{
         flex-direction: column;
+      
     }
 }
 
@@ -797,12 +802,14 @@ footer{
 @media screen and (max-width: 780px){
     body{
         padding-inline: 1.375%;
+        header{
+            flex-direction: column;
+            justify-content: space-between;
+            .header-wrapper{
+                align-items:baseline;
+            }
    } 
-   header{
-    flex-direction: column;
-    justify-content: space-between;
-    align-items:flex-start;
-    height: 100px;
+   
 }
 .hero{
     gap: 30px;
@@ -812,6 +819,36 @@ footer{
         height: 307px;
     }
 }
+.try{
+    .try-end{
+        flex-direction: column;
+        align-self:center;
+    }
+}
+.test{
+    padding: 10px;
+    .test-cards{
+        display: flex;
+        gap: 100px;
+        justify-content:center;
+        .card{
+            max-width: 485px;
+            height: auto;
+            flex-direction: column;
+            align-items:center;
+            padding: 15px;
+            justify-content: space-evenly;
+            gap: 15px;
+            .card-ava{
+                width: 90px;
+                height: 90px;
+                border-radius:50%;
+            }
+        }    
+    }   
+}
+
+
    .features{
     .learn{
         .learn-item{
@@ -824,7 +861,8 @@ footer{
                 margin: 0 auto;
             }
             .item-text{
-                min-width: none;
+                min-width: 100%;
+                margin: auto;
             }
            }
     }
