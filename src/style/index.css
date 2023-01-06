@@ -171,7 +171,7 @@ body header .demo:hover svg path, body header :focus svg path {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
+  min-width: 400px;
   height: 410px;
 }
 .info .info-text {
@@ -593,9 +593,10 @@ footer .contact .tel a {
 footer ul {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
-footer ul :first-child {
+footer ul li span {
+  display: inline-block;
   margin-bottom: 30px;
   font-family: "Montserrat";
   font-style: normal;

@@ -182,7 +182,7 @@ body{
         background-size:contain;
         background-repeat:no-repeat;
         background-position:center;
-        width: 100%;
+        min-width: 400px;
         height: 410px;
     }
     .info-text{
@@ -636,17 +636,20 @@ footer{
     ul{
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        :first-child{
-            margin-bottom: 30px;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 160%;
-            color: #212353;
-        }
+        gap: 30px;
+       
         li{
+            span{
+                    display: inline-block;
+                    margin-bottom: 30px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #212353;
+                
+            }
             a{
                 font-family: 'Montserrat';
                 font-style: normal;
@@ -664,6 +667,7 @@ footer{
             }
         }
     }
+  
     
    }
 
