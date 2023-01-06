@@ -34,7 +34,7 @@ body header .header-wrapper nav ul {
 }
 body header .header-wrapper nav ul li a {
   text-decoration: none;
-  color: #4B5D68;
+  color: #4b5d68;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -42,19 +42,19 @@ body header .header-wrapper nav ul li a {
   line-height: 160%;
 }
 body header .header-wrapper nav ul li:hover a {
-  color: #8A40EE;
+  color: #8a40ee;
 }
 body header .demo {
   box-sizing: border-box;
   width: 210px;
   height: 60px;
-  border: 1px solid #9C69E2;
+  border: 1px solid #9c69e2;
   border-radius: 50px;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 body header .demo svg path {
-  stroke: #9C69E2;
+  stroke: #9c69e2;
 }
 body header .demo a {
   text-decoration: none;
@@ -68,14 +68,17 @@ body header .demo a {
   padding: 16px 23px 16px 23px;
   display: inline-block;
 }
-body header .demo:hover, body header :focus {
-  background-color: #9C69E2;
+body header .demo:hover,
+body header :focus {
+  background-color: #9c69e2;
 }
-body header .demo:hover a, body header :focus a {
-  color: #FFFFFF;
+body header .demo:hover a,
+body header :focus a {
+  color: #ffffff;
 }
-body header .demo:hover svg path, body header :focus svg path {
-  stroke: #FFFFFF;
+body header .demo:hover svg path,
+body header :focus svg path {
+  stroke: #ffffff;
 }
 
 .menu-btn {
@@ -90,7 +93,7 @@ body header .demo:hover svg path, body header :focus svg path {
   padding-block-start: 10px;
 }
 .menu-icon svg {
-  fill: #8A40EE;
+  fill: #8a40ee;
 }
 
 .hero {
@@ -128,7 +131,7 @@ body header .demo:hover svg path, body header :focus svg path {
   font-weight: 500;
   font-size: 18px;
   line-height: 160%;
-  color: #4B5D68;
+  color: #4b5d68;
   max-width: 370px;
 }
 .hero .hero-text a {
@@ -139,9 +142,9 @@ body header .demo:hover svg path, body header :focus svg path {
   line-height: 160%;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
-  background: #9C69E2;
-  border: 1px solid #9C69E2;
+  color: #ffffff;
+  background: #9c69e2;
+  border: 1px solid #9c69e2;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
   width: 210px;
@@ -151,14 +154,14 @@ body header .demo:hover svg path, body header :focus svg path {
   padding-left: 52px;
 }
 .hero .hero-text a:hover {
-  background: #8A40EE;
+  background: #8a40ee;
 }
 .hero .hero-text a:focus {
-  background: #8A40EE;
+  background: #8a40ee;
 }
 
 .info {
-  background: #FDE8F5;
+  background: #fde8f5;
   border-radius: 50px;
   height: 560px;
   display: flex;
@@ -196,7 +199,7 @@ body header .demo:hover svg path, body header :focus svg path {
   font-weight: 500;
   font-size: 18px;
   line-height: 160%;
-  color: #4B5D68;
+  color: #4b5d68;
 }
 
 .features {
@@ -219,7 +222,7 @@ body header .demo:hover svg path, body header :focus svg path {
   font-weight: 500;
   font-size: 18px;
   line-height: 160%;
-  color: #4B5D68;
+  color: #4b5d68;
 }
 .features .learn {
   display: grid;
@@ -278,7 +281,7 @@ body header .demo:hover svg path, body header :focus svg path {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: #4B5D68;
+  color: #4b5d68;
   width: 230px;
 }
 .features .learn .learn-item .item-text a {
@@ -301,7 +304,7 @@ body header .demo:hover svg path, body header :focus svg path {
   margin-inline-start: 20px;
 }
 .features .learn .learn-item .search {
-  background-color: #F0FAF9;
+  background-color: #f0faf9;
   background-image: url(../image/learn-bg-image-1.svg);
   background-repeat: no-repeat;
   background-position: bottom 195px right 40px;
@@ -311,18 +314,18 @@ body header .demo:hover svg path, body header :focus svg path {
   background-image: url(../image/learn-bg-image-2.svg);
   background-repeat: no-repeat;
   background-position: bottom 10px right 30px;
-  background-color: #F6F0FD;
+  background-color: #f6f0fd;
   animation: bg-learn-inimate 10s linear infinite;
 }
 .features .learn .learn-item .print {
-  background-color: #FEF0F8;
+  background-color: #fef0f8;
   background-image: url(../image/learn-bg-image-3.svg);
   background-repeat: no-repeat;
   background-position: top 20px right 30px;
   animation: bg-learn-inimate 10s linear infinite;
 }
 .features .learn .learn-item .security {
-  background-color: #EAF6FC;
+  background-color: #eaf6fc;
   background-image: url(../image/learn-bg-image-4.svg);
   background-repeat: no-repeat;
   background-position: top 20px right 30px;
@@ -342,7 +345,7 @@ body header .demo:hover svg path, body header :focus svg path {
 }
 .test {
   min-height: 580px;
-  background-color: #CCDDFF;
+  background-color: #ccddff;
   border-radius: 50px;
   background-image: url(../image/test-bg-image.svg);
   background-repeat: no-repeat;
@@ -371,7 +374,7 @@ body header .demo:hover svg path, body header :focus svg path {
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
-  color: #4B5D68;
+  color: #4b5d68;
 }
 .test .test-cards {
   display: flex;
@@ -382,8 +385,8 @@ body header .demo:hover svg path, body header :focus svg path {
   max-width: 485px;
   height: 300px;
   box-sizing: border-box;
-  background: #FFFFFF;
-  border: 1px solid #9C69E2;
+  background: #ffffff;
+  border: 1px solid #9c69e2;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
   display: flex;
@@ -429,7 +432,7 @@ body header .demo:hover svg path, body header :focus svg path {
   font-size: 14px;
   line-height: 160%;
   letter-spacing: 0.01em;
-  color: #9C69E2;
+  color: #9c69e2;
   text-decoration: none;
 }
 .test .test-cards .card .card-info .info-details p {
@@ -438,7 +441,7 @@ body header .demo:hover svg path, body header :focus svg path {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: #4B5D68;
+  color: #4b5d68;
 }
 
 .try {
@@ -459,15 +462,15 @@ body header .demo:hover svg path, body header :focus svg path {
   font-weight: 500;
   font-size: 18px;
   line-height: 160%;
-  color: #4B5D68;
+  color: #4b5d68;
 }
 .try .try-end {
   display: flex;
   gap: 30px;
 }
 .try .try-end .more {
-  background: #F063B8;
-  border: 1px solid #F063B8;
+  background: #f063b8;
+  border: 1px solid #f063b8;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
   text-decoration: none;
@@ -476,7 +479,7 @@ body header .demo:hover svg path, body header :focus svg path {
   font-weight: 500;
   font-size: 18px;
   line-height: 160%;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 210px;
   height: 60px;
   box-sizing: border-box;
@@ -485,22 +488,22 @@ body header .demo:hover svg path, body header :focus svg path {
   align-items: center;
 }
 .try .try-end .more:hover {
-  background: #EB4BAB;
+  background: #eb4bab;
 }
 .try .try-end .more:focus {
-  background: #EB4BAB;
+  background: #eb4bab;
 }
 .try .try-end .demo {
   box-sizing: border-box;
   width: 210px;
   height: 60px;
-  border: 1px solid #9C69E2;
+  border: 1px solid #9c69e2;
   border-radius: 50px;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .try .try-end .demo svg path {
-  stroke: #9C69E2;
+  stroke: #9c69e2;
 }
 .try .try-end .demo a {
   text-decoration: none;
@@ -515,13 +518,13 @@ body header .demo:hover svg path, body header :focus svg path {
   display: inline-block;
 }
 .try .try-end .demo:hover {
-  background-color: #9C69E2;
+  background-color: #9c69e2;
 }
 .try .try-end .demo:hover a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .try .try-end .demo:hover svg path {
-  stroke: #FFFFFF;
+  stroke: #ffffff;
 }
 
 footer {
@@ -611,14 +614,14 @@ footer ul li a {
   font-weight: 500;
   font-size: 16px;
   line-height: 160%;
-  color: #4B5D68;
+  color: #4b5d68;
   text-decoration: none;
 }
 footer ul li a:hover {
-  color: #8A40EE;
+  color: #8a40ee;
 }
 footer ul li a:focus {
-  color: #8A40EE;
+  color: #8a40ee;
 }
 
 .icons {
@@ -643,43 +646,43 @@ footer ul li a:focus {
   background-color: white;
 }
 .icons .icon:hover .facebook {
-  border: 0.5px solid #3B5998;
+  border: 0.5px solid #3b5998;
 }
 .icons .icon:hover .facebook use {
-  fill: #3B5998;
+  fill: #3b5998;
 }
 .icons .icon:hover .twitter {
-  border: 0.5px solid #00ACEE;
+  border: 0.5px solid #00acee;
 }
 .icons .icon:hover .twitter use {
-  fill: #00ACEE;
+  fill: #00acee;
 }
 .icons .icon:hover .instagram {
-  border: 0.5px solid #C13584;
+  border: 0.5px solid #c13584;
 }
 .icons .icon:hover .instagram use {
-  fill: #C13584;
+  fill: #c13584;
 }
 .icons .icon:focus .icon-social {
   background-color: white;
 }
 .icons .icon:focus .facebook {
-  border: 0.5px solid #3B5998;
+  border: 0.5px solid #3b5998;
 }
 .icons .icon:focus .facebook use {
-  fill: #3B5998;
+  fill: #3b5998;
 }
 .icons .icon:focus .twitter {
-  border: 0.5px solid #00ACEE;
+  border: 0.5px solid #00acee;
 }
 .icons .icon:focus .twitter use {
-  fill: #00ACEE;
+  fill: #00acee;
 }
 .icons .icon:focus .instagram {
-  border: 0.5px solid #C13584;
+  border: 0.5px solid #c13584;
 }
 .icons .icon:focus .instagram use {
-  fill: #C13584;
+  fill: #c13584;
 }
 
 @media screen and (min-width: 1600px) {
@@ -737,7 +740,7 @@ footer ul li a:focus {
     display: none;
   }
   .menu-btn:checked + label > svg {
-    fill: #C13584;
+    fill: #c13584;
     transform: rotate(90deg);
   }
   .menu-icon {
