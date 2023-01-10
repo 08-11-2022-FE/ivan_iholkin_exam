@@ -116,6 +116,7 @@ body header :focus svg path {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 40px;
 }
 .hero .hero-text h1 {
   font-family: "Work Sans";
@@ -788,6 +789,9 @@ footer ul li a:focus {
   }
   .hero .hero-text h1 {
     font-size: 48px;
+  }
+  .hero .hero-text a {
+    align-self: center;
   }
   .info .info-image {
     min-width: 100%;
