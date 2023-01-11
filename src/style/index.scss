@@ -363,7 +363,6 @@ body {
 }
 
 .test {
-  // min-width: 1170px;
   min-height: 580px;
   background-color: #ccddff;
   border-radius: 50px;
@@ -770,6 +769,7 @@ footer {
   }
   .try {
     flex-direction: column;
+    gap: 20px;
     .try-end {
       align-self: flex-end;
     }
@@ -817,8 +817,12 @@ footer {
     header {
       flex-direction: column;
       justify-content: space-between;
+      gap: 20px;
       .header-wrapper {
         align-items: baseline;
+      }
+      .demo{
+        align-self:center;
       }
     }
   }

@@ -732,6 +732,7 @@ footer ul li a:focus {
   }
   .try {
     flex-direction: column;
+    gap: 20px;
   }
   .try .try-end {
     align-self: flex-end;
@@ -775,9 +776,13 @@ footer ul li a:focus {
   body header {
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
   }
   body header .header-wrapper {
     align-items: baseline;
+  }
+  body header .demo {
+    align-self: center;
   }
   .hero {
     gap: 30px;
